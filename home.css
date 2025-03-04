@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+body{
+    background-color: rgb(49, 47, 47);
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-logo {
+    font-size: 24px;
+}
+
+.nav-middle a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: white;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+.ingredients{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: 5%;
+    height: 25%;
+}
+
+.receipe{
+    display: flex;
+    justify-content: center;
+    width: 55.5%;
+    margin: 5.5%;
+    height: 25%;
+   
+}
+
+input[type=text] {
+    border: 2px solid #00851be4;
+    width: 100%;
+    outline: none;
+    color: white;
+    padding-left: 5%;
+}
+
+.ingredients input[type=submit] {
+    border: 2px solid #00851be4;
+    width: fit-content;
+    background: linear-gradient(90deg ,#056819e4,#9bff17 );
+    color: white;
+}
+
+.ingredients input[type=submit]:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.receipe input[type=submit] {
+    border: 2px solid #00851be4;
+    width: fit-content;
+    background: linear-gradient(90deg ,#00851be4,#09ff09 );
+    color: white;
+}
+
+.receipe input[type=submit]:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+input[type=text]::placeholder {
+    color: white;
+    padding-left: 2%;
+}
+
+.button-container {
+    margin-left: 3%;
+    width:29%;
+    height: 460px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container .in{
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    margin-left: 2%;
+    padding-bottom: 2%;
+    font-size: 30px;
+    flex-grow: 100;
+}
+
+.button-container::-webkit-scrollbar{
+    display: none;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 5% 5% 5%;
+}
+
+.buttons li{
+    flex-grow: 1;
+    flex-basis: 60px;
+    list-style: none;
+    background: #00851be4;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    padding: 2% 2% 2% 2%;
+    margin: 2% 2% 2% 2%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ul li:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.section {
+    display: flex;
+    
+}
+
+.cards-container {
+    width: 54.5%;
+    margin-left: 8%;
+    height:480px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 5%;
+    scrollbar-width: none;
+}
+
+
+.re {
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding-bottom: 3%;
+    font-size: 30px;
+    flex-grow: 100;
+    z-index: 10;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.cards-container::-webkit-scrollbar{
+    display: none;
+}
+
+.cards-item:hover {
+    transform: scale(1.0);
+    transition: .3s;
+}
+
+.cards-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 38%;
+    width: 100%;
+    background: #ffffff ;
+    color: #00851be4;
+    box-shadow: 2px 2px 2px 0px #09ff09;
+    border: 1px solid #00851be4;
+    list-style: none;
+    border-radius: 10px;
+    flex-basis: 200px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.cards-item .con{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.cards-item:hover .con{
+    height: 30%;
+    position: absolute;
+}
+
+.con button{
+    border: none;
+    background: #00851be4;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
